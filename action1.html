@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand">歡迎</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">回首頁 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">辦門號</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="https://www.tstartel.com/CWS/">台灣之星</a>
+                        <a class="dropdown-item" href="https://www.aptg.com.tw/my/">亞太電信</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">購買清單</h1>
+            <p class="lead">請正確填寫您的資訊</p>
+            <hr class="my-2">
+        </div>
+    </div>
+
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="table-info">
+            <tr>
+                <th>編號</th>
+                <th>手機</th>
+                <th>價格</th>
+                <th>性能</th>
+                <th>備註</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">1</td>
+                <td>APPLE iPhone 12 Pro Max</td>
+                <td>$39,590</td>
+                <td>256G</td>
+                <td>不含電源轉接器和 EarPods</td>
+            </tr>
+            <tr>
+                <td scope="row">2</td>
+                <td>Samsung Galaxy S21</td>
+                <td>$25,900 </td>
+                <td>8G/256G</td>
+                <td>預購商品，依原廠到貨時間為準，請耐心等候</td>
+            </tr>
+            <tr>
+                <td scope="row">3</td>
+                <td>OPPO Reno5</td>
+                <td>$13,490</td>
+                <td>8GB RAM+128GB</td>
+                <td>65W SuperVOOC 2.0超級閃充</td>
+            </tr>
+            <tr>
+                <td scope="row">4</td>
+                <td>vivo X50e</td>
+                <td>$9,290</td>
+                <td>8G/128G</td>
+                <td>4鏡頭主相機4800萬+1300萬(長焦)+800萬(廣角)+200萬(微距)</td>
+            </tr>
+
+        </tbody>
+    </table>
+
+    <div style="margin:30px;">
+        <form action="check.php" method="POST">
+            <div class="form-group">
+                <label for="">姓名</label>
+                <input type="text" name="name" id="name" class="form-control" placeholder="輸入名字">
+            </div>
+            <div class="form-group">
+                <label for="">e-mail</label>
+                <input type="text" name="email" id="email" class="form-control" placeholder="輸入email">
+            </div>
+            <div class="form-group">
+                <label for="">住址</label>
+                <input type="live" name="live" id="live" class="form-control" placeholder="輸入住址">
+            </div>
+            <div class="form-group">
+                <label for="">電話</label>
+                <input type="text" name="phone" id="phone" class="form-control" placeholder="輸入電話">
+            </div>
+            <div class="form-group">
+                <input type="reset"  name="reset" id="reset" class="form-control" placeholder="重製">
+            </div>
+            <div class="form-group">
+                <label for="">留言</label>
+                <textarea class="form-control" name="msg" id="msg" rows="4"></textarea>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="M" checked>
+                    男性
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="W" checked>
+                    女性
+                </label>
+            </div>
+
+            <div class="form-check form-check-inline">
+                <label class="form-check-label ml-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> iphone12 pro
+                </label>
+                <label class="form-check-label ml-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> Samsung Galaxy S21
+                </label>
+                <label class="form-check-label ml-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> OPPO Reno5
+                </label>
+                <label class="form-check-label ml-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> vivo X50e
+                </label>
+            </div>
+
+
+
+            <button type="submit" class="btn btn-primary">送出</button>
+        </form>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
